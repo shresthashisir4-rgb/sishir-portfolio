@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f5f7fb">
+<meta name="description" content="Sishir Shrestha — Integrated Business Management student at Dong-A University, building skills in data analytics and business technology.">
+<title>Sishir Shrestha | Student Portfolio</title>
+<style>
+:root{--bg:#f5f7fb;--surface:#fff;--ink:#17243a;--muted:#617087;--accent:#3568d4;--accent2:#e8efff;--line:#e0e6f0;--soft:#f0f4fb;--shadow:0 12px 35px rgba(31,53,92,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:85px}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}a{color:inherit;text-decoration:none}.container{width:min(1080px,91%);margin:auto}
+header{height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.nav-shell{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.logo{font-weight:900;letter-spacing:.04em;font-size:1.1rem}.logo span{color:var(--accent)}nav{display:flex;align-items:center;gap:22px;color:#52617a;font-size:.9rem}nav a:hover{color:var(--accent)}.menu{display:none;border:1px solid var(--line);background:white;border-radius:9px;padding:8px 11px;font-size:1.2rem}
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:center;padding:72px 0 68px}.eyebrow{display:inline-block;background:var(--accent2);color:var(--accent);border-radius:999px;padding:5px 12px;font-weight:800;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase}
+h1{font-size:clamp(2.7rem,6vw,4.45rem);line-height:1.08;letter-spacing:-.055em;margin:19px 0 17px}h1 span{color:var(--accent)}.lead{font-size:1.08rem;color:var(--muted);max-width:590px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:25px}.btn{display:inline-flex;align-items:center;justify-content:center;padding:11px 17px;border-radius:10px;font-weight:750;font-size:.91rem;border:1px solid var(--line);transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px);box-shadow:var(--shadow)}.btn.primary{background:var(--accent);border-color:var(--accent);color:white}.hero-visual{background:linear-gradient(145deg,#dce7ff,#f7f9ff 70%);border:1px solid #d8e3f7;border-radius:28px;padding:25px;min-height:350px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}.hero-visual:before,.hero-visual:after{content:"";position:absolute;border-radius:50%;border:1px solid #b7c9f0}.hero-visual:before{width:280px;height:280px;right:-65px;top:-85px}.hero-visual:after{width:200px;height:200px;left:-80px;bottom:-85px}.profile-card{position:relative;z-index:1;width:min(330px,100%);background:rgba(255,255,255,.93);border:1px solid white;border-radius:22px;padding:25px;box-shadow:0 20px 55px #294b8a20}.avatar{height:70px;width:70px;border-radius:20px;display:grid;place-items:center;background:var(--accent);color:white;font-size:1.55rem;font-weight:900;margin-bottom:15px}.profile-card h2{margin:0;font-size:1.35rem}.profile-card p{margin:3px 0 18px;color:var(--muted);font-size:.91rem}.pill{display:inline-block;background:var(--soft);border:1px solid var(--line);padding:5px 9px;border-radius:8px;font-size:.75rem;margin:3px 3px 0 0;color:#465875}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:18px}.stat{border:1px solid var(--line);border-radius:12px;padding:12px 8px;text-align:center;background:#fff}.stat strong{display:block;font-size:.95rem;color:var(--accent)}.stat span{font-size:.72rem;color:var(--muted)}
+section{padding:48px 0}.section-head{text-align:center;margin:0 auto 28px;max-width:700px}.section-label{font-size:.76rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:850}.section-head h2{font-size:clamp(1.8rem,4vw,2.45rem);line-height:1.2;letter-spacing:-.04em;margin:6px 0 9px}.section-head p{color:var(--muted);margin:0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}.card{background:var(--surface);border:1px solid var(--line);border-radius:17px;padding:24px;box-shadow:var(--shadow)}.card h3{margin:0 0 9px;font-size:1.1rem}.card p{margin:0;color:var(--muted)}.info-list{display:grid;gap:12px}.info-row{display:flex;justify-content:space-between;gap:15px;border-bottom:1px solid var(--line);padding-bottom:9px;font-size:.9rem}.info-row:last-child{border:0;padding:0}.info-row span{color:var(--muted)}.education-list{display:grid;gap:15px}.edu-item{display:grid;grid-template-columns:115px 1fr;gap:18px;padding:22px;background:white;border:1px solid var(--line);border-radius:15px;box-shadow:var(--shadow)}.year{font-size:.76rem;color:var(--accent);font-weight:850;letter-spacing:.04em;padding-top:4px}.edu-item h3{margin:0 0 3px;font-size:1.05rem}.edu-item p{margin:0;color:var(--muted);font-size:.9rem}.skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill-card{background:white;border:1px solid var(--line);border-radius:15px;padding:20px}.skill-icon{height:42px;width:42px;border-radius:12px;background:var(--accent2);color:var(--accent);display:grid;place-items:center;font-weight:900;font-size:1.05rem;margin-bottom:12px}.skill-card h3{margin:0 0 9px;font-size:1rem}.skill-card p{margin:0;color:var(--muted);font-size:.86rem}.project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{background:white;border:1px solid var(--line);border-radius:17px;overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}.project-banner{height:115px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#dce7ff,#eff3ff);color:var(--accent);font-size:2rem;font-weight:900;letter-spacing:.08em}.project-body{padding:22px;display:flex;flex-direction:column;flex:1}.project-meta{font-size:.72rem;font-weight:850;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}.project h3{margin:5px 0 8px;font-size:1.12rem}.project p{margin:0 0 15px;color:var(--muted);font-size:.9rem}.project .pills{margin-top:auto}.future{background:#eaf0ff;border:1px solid #d5e0fa;border-radius:22px;padding:34px;display:grid;grid-template-columns:1fr .8fr;gap:25px;align-items:center}.future h2{font-size:clamp(1.8rem,4vw,2.5rem);line-height:1.2;margin:7px 0 12px;letter-spacing:-.04em}.future p{color:#52627c;margin:0}.future-list{display:flex;flex-wrap:wrap;gap:8px}.future-list span{padding:7px 10px;background:#fff;border:1px solid #d8e2f5;border-radius:9px;font-size:.82rem;font-weight:700;color:#435575}.contact-card{display:flex;align-items:center;justify-content:space-between;gap:25px;background:#17243a;color:white;border-radius:20px;padding:30px}.contact-card h2{font-size:1.7rem;margin:0 0 5px}.contact-card p{margin:0;color:#c1cce0}.contact-links{display:flex;gap:10px;flex-wrap:wrap}.contact-links .btn{color:white;border-color:#40516d}.contact-links .btn.primary{background:var(--accent);border-color:var(--accent)}footer{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:28px 0 35px;color:var(--muted);font-size:.82rem}
+@media(max-width:820px){nav{gap:12px;font-size:.82rem}.hero{gap:25px}.skills-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:650px){header{height:auto;min-height:68px;flex-wrap:wrap;padding:13px 0}.menu{display:block}nav{display:none;width:100%;padding:8px 0 12px;flex-wrap:wrap}nav.open{display:flex}nav a{padding:5px 2px}.hero{grid-template-columns:1fr;padding:48px 0}.hero-visual{min-height:310px}.about-grid,.project-grid,.future{grid-template-columns:1fr}.edu-item{grid-template-columns:1fr;gap:4px}.skills-grid{grid-template-columns:1fr 1fr}.contact-card{align-items:flex-start;flex-direction:column}.stats{gap:6px}}@media(max-width:390px){.skills-grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.stat{display:flex;justify-content:space-between;align-items:center}}
+</style>
+</head>
+<body>
+<div class="nav-shell"><header class="container">
+  <a class="logo" href="#home">SISHIR<span>.</span></a>
+  <button class="menu" id="menuButton" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+  <nav id="navLinks" aria-label="Main navigation">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#future">Future</a><a href="#contact">Contact</a>
+  </nav>
+</header></div>
+<main class="container">
+<section class="hero" id="home">
+  <div>
+    <span class="eyebrow">Student Portfolio</span>
+    <h1>Sishir Shrestha</h1>
+    <h2 style="font-size:1.28rem;margin:0 0 13px">Integrated Business Management Student</h2>
+    <p class="lead">Hello! I’m Sishir, an Integrated Business Management student at Dong-A University in Busan, South Korea. I’m interested in connecting business with technology and developing the analytical skills needed to become a data analyst.</p>
+    <div class="actions"><a class="btn primary" href="#projects">Explore My Work ↘</a><a class="btn" href="#contact">Contact Me</a></div>
+  </div>
+  <div class="hero-visual"><div class="profile-card">
+    <div class="avatar">SS</div><h2>Sishir Shrestha</h2><p>Integrated Business Management · Dong-A University</p>
+    <span class="pill">Business</span><span class="pill">Technology</span><span class="pill">Data Analytics</span>
+    <div class="stats"><div class="stat"><strong>IBM</strong><span>Current Program</span></div><div class="stat"><strong>2026</strong><span>University Journey</span></div><div class="stat"><strong>Data</strong><span>Career Goal</span></div></div>
+  </div></div>
+</section>
+
+<section id="about">
+  <div class="section-head"><span class="section-label">About</span><h2>A little about me</h2><p>I am building a strong foundation in business management while developing practical digital and analytical skills.</p></div>
+  <div class="about-grid">
+    <article class="card"><h3>Hello, I’m Sishir 👋</h3><p>I’m currently studying Integrated Business Management at Dong-A University. My goal is to connect business knowledge with technology and use data to understand problems, identify patterns, and support better decisions. I enjoy learning programming, exploring accounting and business concepts, and improving through practical projects. I value honesty, discipline, teamwork, and continuous learning.</p></article>
+    <aside class="card"><h3>Personal Information</h3><div class="info-list"><div class="info-row"><span>Name</span><strong>Sishir Shrestha</strong></div><div class="info-row"><span>Course</span><strong>Integrated Business Management</strong></div><div class="info-row"><span>University</span><strong>Dong-A University</strong></div><div class="info-row"><span>Location</span><strong>Busan, South Korea</strong></div><div class="info-row"><span>Career Interest</span><strong>Data Analyst</strong></div></div></aside>
+  </div>
+</section>
+
+<section id="education">
+  <div class="section-head"><span class="section-label">Education</span><h2>My academic journey</h2><p>Learning business, technology, and practical skills step by step.</p></div>
+  <div class="education-list">
+    <article class="edu-item"><div class="year">CURRENT · 2026—</div><div><h3>Integrated Business Management</h3><p>Dong-A University · Busan, South Korea</p><p>Studying business management while developing digital, communication, and analytical skills.</p></div></article>
+    <article class="edu-item"><div class="year">2024</div><div><h3>Higher Secondary Education</h3><p>Dibyajyoti Secondary School · Nepal</p><p>Completed Grade 12, building academic foundations and interests in computers and business.</p></div></article>
+    <article class="edu-item"><div class="year">2022</div><div><h3>Secondary Education</h3><p>Wahaki Secondary School · Nepal</p><p>Completed secondary education and developed an interest in learning and problem solving.</p></div></article>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="section-head"><span class="section-label">Skills</span><h2>What I’m developing</h2><p>A mix of business understanding, technology, and communication.</p></div>
+  <div class="skills-grid">
+    <article class="skill-card"><div class="skill-icon">B</div><h3>Business</h3><p>Business management, accounting fundamentals, research, presentations, problem solving.</p></article>
+    <article class="skill-card"><div class="skill-icon">⌘</div><h3>Technology</h3><p>Python, R / RStudio, HTML, CSS, Microsoft Office, basic programming.</p></article>
+    <article class="skill-card"><div class="skill-icon">↗</div><h3>Data Analytics</h3><p>Learning data structures, spreadsheet formulas, data exploration, and visualization.</p></article>
+    <article class="skill-card"><div class="skill-icon">◎</div><h3>Communication</h3><p>Teamwork, communication, time management, presentation, and continuous learning.</p></article>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="section-head"><span class="section-label">Projects</span><h2>Selected academic and personal projects</h2><p>Academic and personal projects from my learning journey.</p></div>
+  <div class="project-grid">
+    <article class="project"><div class="project-banner">01 / CODE</div><div class="project-body"><span class="project-meta">Technology</span><h3>Snake Game</h3><p>A beginner game project exploring keyboard controls, score tracking, game rules, and user interface design. It helps me practice programming logic and breaking a problem into functions.</p><div class="pills"><span class="pill">Python</span><span class="pill">Game Logic</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add GitHub repository →</a></div></article>
+    <article class="project"><div class="project-banner">02 / LOGIC</div><div class="project-body"><span class="project-meta">Strategy</span><h3>Grim Trigger Strategy</h3><p>A strategy-programming exercise about conditional decisions and how previous actions can influence future responses in repeated interactions.</p><div class="pills"><span class="pill">Python</span><span class="pill">Conditionals</span><span class="pill">Game Theory</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add GitHub repository →</a></div></article>
+    <article class="project"><div class="project-banner">03 / DATA</div><div class="project-body"><span class="project-meta">Data Analytics</span><h3>R Data Exploration</h3><p>A growing collection of R practice covering data structures, summaries, data cleaning, and simple visualizations as I work toward a data analyst career.</p><div class="pills"><span class="pill">R</span><span class="pill">RStudio</span><span class="pill">Analysis</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add GitHub repository →</a></div></article>
+    <article class="project"><div class="project-banner">04 / BUSINESS</div><div class="project-body"><span class="project-meta">Business & Reporting</span><h3>Excel Business Analysis</h3><p>A planned spreadsheet project using formulas, organized tables, summary metrics, and a simple report to communicate a business question.</p><div class="pills"><span class="pill">Excel</span><span class="pill">Business</span><span class="pill">Reporting</span></div><a class="project-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">Add GitHub repository →</a></div></article>
+    <article class="project"><div class="project-banner">05 / GAME</div><div class="project-body"><span class="project-meta">Web Development · Game Design</span><h3>Tasty Fish</h3><p>An original pond adventure where players catch fish for a family dinner using a bow and arrows. Aim ahead of moving fish, manage limited arrows, avoid dangerous fish, and complete five timed missions.</p><div class="pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span class="pill">Game Logic</span></div><div class="actions" style="margin-top:16px"><a class="btn primary" href="#embedded-tasty-fish">Play Game ↓</a><a class="btn" href="tasty_fish.html" target="_blank" rel="noopener noreferrer">Open Full Game ↗</a><a class="btn" href="https://docs.google.com/document/d/1bV4EAxjaHRjgRA6h0JSTqo3uQQADjFLPdudoL6yDutE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Game Document ↗</a></div></div></article>
+  </div>
+
+  <div id="embedded-tasty-fish" style="margin-top:30px;background:white;border:1px solid var(--line);border-radius:20px;padding:clamp(14px,3vw,24px);box-shadow:var(--shadow)">
+    <div class="section-head" style="margin-bottom:20px">
+      <span class="section-label">Play Here</span>
+      <h2>Tasty Fish</h2>
+      <p>Play Tasty Fish directly inside this portfolio page.</p>
+    </div>
+    <iframe
+      src="tasty_fish.html"
+      title="Tasty Fish game"
+      style="display:block;width:100%;height:850px;border:1px solid var(--line);border-radius:14px;background:#090d19"
+      loading="lazy"
+      allowfullscreen>
+    </iframe>
+    <p style="color:var(--muted);font-size:.84rem;margin:12px 0 0">Upload <strong>tasty_fish.html</strong> to the same GitHub Pages repository as this <strong>index.html</strong> file so the embedded game and full-game link work.</p>
+  </div>
+
+  <p style="color:var(--muted);font-size:.84rem;margin-top:13px">Note: Replace the sample repository links with your real project URLs. Mark planned work as in progress until you have completed it.</p>
+</section>
+
+<section id="future">
+  <div class="future"><div><span class="section-label">Future Direction</span><h2>Learning today, building for tomorrow.</h2><p>My goal is to combine business knowledge with technology, gain practical data analysis experience, and communicate insights that help people make informed decisions. I plan to keep learning through coursework and real projects.</p></div><div class="future-list"><span>Business Management</span><span>Python & R</span><span>Data Analysis</span><span>Excel Reporting</span><span>Communication</span><span>Practical Experience</span><span>Continuous Learning</span></div></div>
+</section>
+
+<section id="contact">
+  <div class="contact-card"><div><span style="font-size:.76rem;letter-spacing:.13em;font-weight:850;color:#9db9ff">CONTACT</span><h2>Let’s connect</h2><p>Feel free to connect about business, technology, or learning projects.</p></div><div class="contact-links"><a class="btn primary" href="mailto:your.email@example.com">Email Me ↗</a><a class="btn" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div>
+  <p style="color:var(--muted);font-size:.83rem;margin-top:12px">Update the placeholder email and GitHub links before publishing. Only include information you are comfortable sharing publicly.</p>
+</section>
+</main>
+<footer class="container"><span>© <span id="year"></span> Sishir Shrestha</span><span>Built for GitHub Pages · HTML, CSS & JavaScript</span></footer>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const menuButton = document.getElementById("menuButton");
+const navLinks = document.getElementById("navLinks");
+menuButton.addEventListener("click", () => {
+  const isOpen = navLinks.classList.toggle("open");
+  menuButton.setAttribute("aria-expanded", String(isOpen));
+});
+navLinks.querySelectorAll("a").forEach(link => link.addEventListener("click", () => {
+  navLinks.classList.remove("open");
+  menuButton.setAttribute("aria-expanded", "false");
+}));
+</script>
+</body>
+</html>
